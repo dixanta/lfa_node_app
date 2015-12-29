@@ -18,6 +18,13 @@ app.get("/",function(req,res){
 	});
 });
 
+app.get("/edit/:id",function(req,res){
+	res.render("edit",{
+		title:'Node App',
+		id:req.params.id
+	});
+});
+
 app.listen(port,function(){
 	console.log("Server is listening at "+ port);
 });
