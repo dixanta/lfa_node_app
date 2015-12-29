@@ -1,13 +1,4 @@
-<html>
-<head>
-	<title><%=title%></title>
-	<link href="bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
-	<link href="bootstrap/dist/css/bootstrap-theme.min.css" type="text/css" rel="stylesheet"/>	
-	<script src="jquery/dist/jquery.min.js"></script>
-	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<div class="container">
+<% include partials/header%>
 <h1><%=message%></h1>
 
 <% for(var i=1;i<=10;i++){%>
@@ -15,6 +6,4 @@
 <% } %>
 
 <%= new Date()%>
-</div>
-</body>
-</html>
+<% include partials/footer%>
